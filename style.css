@@ -120,3 +120,14 @@ iframe {
     height: auto;
 }
 */
+
+.svg-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.svg-container svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
