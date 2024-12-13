@@ -1,6 +1,11 @@
 
+* {
+    outline: 1px solid red;
+}
+
     body {
         font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
     }
 
     p {
