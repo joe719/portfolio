@@ -1,11 +1,6 @@
 
-* {
-    outline: 1px solid red;
-}
-
     body {
         font-family: 'Inter', sans-serif;
-        overflow-x: hidden;
     }
 
     p {
@@ -119,20 +114,3 @@ iframe {
         .resume-coded .resume-coded-heading h1 {
           line-height: 3.2;
         }
-/*
-.responsive-svg {
-    max-width: 100%;
-    height: auto;
-}
-*/
-
-.svg-container {
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-.svg-container svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
