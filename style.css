@@ -135,9 +135,12 @@ fill: white;
 
 .resume {
 fill: white;
+transition: all 1s;
+transform-origin: 50% 50%;
 }
 .resume:hover {
   fill: #cccccc;
+  transform: scale(1.2)
 }
 
 .contact {
