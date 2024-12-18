@@ -122,3 +122,23 @@ fill: white;
   fill: #D3D3D3;
 }
 
+.work {
+fill: white;
+}
+.work:hover {
+  fill: #D3D3D3;
+}
+
+.resume {
+fill: white;
+}
+.resume:hover {
+  fill: #D3D3D3;
+}
+
+.contact {
+fill: white;
+}
+.contact:hover {
+  fill: #D3D3D3;
+}
