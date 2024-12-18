@@ -114,3 +114,7 @@ iframe {
         .resume-coded .resume-coded-heading h1 {
           line-height: 3.2;
         }
+
+        svg:hover {
+          fill: red;
+        }
