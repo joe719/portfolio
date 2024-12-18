@@ -115,6 +115,10 @@ iframe {
           line-height: 3.2;
         }
 
-svg:hover {
-  fill: red !important;
+.about-me {
+fill: white;
 }
+.about-me:hover {
+  fill: #D3D3D3;
+}
+
