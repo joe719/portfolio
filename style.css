@@ -119,26 +119,26 @@ iframe {
 fill: white;
 }
 .about-me:hover {
-  fill: #D3D3D3;
+  fill: #cccccc;
 }
 
 .work {
 fill: white;
 }
 .work:hover {
-  fill: #D3D3D3;
+  fill: #cccccc;
 }
 
 .resume {
 fill: white;
 }
 .resume:hover {
-  fill: #D3D3D3;
+  fill: #cccccc;
 }
 
 .contact {
 fill: white;
 }
 .contact:hover {
-  fill: #D3D3D3;
+  fill: #cccccc;
 }
