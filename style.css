@@ -115,6 +115,9 @@ iframe {
           line-height: 3.2;
         }
 
-        svg:hover {
-          fill: red;
-        }
+svg {
+fill: white;
+}
+svg:hover {
+  fill: red;
+}
