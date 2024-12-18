@@ -20,6 +20,10 @@
         text-decoration: inherit; /* no underline */
     }
 
+        .linkedin-link:hover {
+background:#FFFF00;
+    }
+
     .border-thick {
         border-style: solid;
         border-color: black;
