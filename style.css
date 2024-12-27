@@ -150,6 +150,6 @@ fill: white;
 .contact-text {
     fill: #000;
     }
-    .contact:hover {
+    .contact-text:hover {
       fill: #0000ff;
     }
