@@ -146,3 +146,10 @@ fill: white;
 .contact:hover {
   fill: #cccccc;
 }
+
+.contact-text {
+    fill: #000;
+    }
+    .contact:hover {
+      fill: #0000ff;
+    }
