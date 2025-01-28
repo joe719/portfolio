@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expandable Text Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .expandable-section {
+      margin: 20px 0;
+    }
+    .expandable-header {
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #fff;
+      border: .25rem solid #000; /* Thicker border */
+      border-bottom: none; /* Prevents stacking */
+      border-radius: 5px 5px 0 0;
+    }
+    .expandable-content {
+      overflow: hidden;
+      height: 0;
+      transition: height 1s ease;
+      padding: 0 10px;
+      /*border: 3px solid #ccc;*/ /* Matches header border */
+      border: .25rem solid #000;
+      border-top: none; /* Avoid double border stacking */
+      /*border-radius: 0 0 5px 5px;*/
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="expandable-section">
+  <div class="expandable-header"><h2>Johnstonbaugh's Music Centers Professional Instrument Rental Program</h2></div>
+  <div class="expandable-content">
+    <!--<h2>Johnstonbaugh's Music Centers Professional Instrument Rental Program</h2>-->
+    <h3>Background</h3>
+    <p>Johnstonbaugh's Music Centers operates as a school music dealer and a retail music store, with its primary business centered on supplying musical instruments to school music programs and renting instruments to students. Much of the company's revenue comes from its beginner instrument rental program, where customers complete rental agreements via an online form hosted on its website. Administrative people then manually process these agreements through the company's Management Information System.</p>
+    <p>The professional instrument rental program existed before my hiring in 2021 as a Marketing and Website Specialist. However, it was only accessible within the beginner rental form, listed and categorized like another school, which lacked clarity or visibility for users. The user journey for this program was convoluted, requiring step-by-step instructions at the beginning of the rental form, which interrupted the flow and purpose of the beginner rental process. The program needed to be streamlined, intuitive, and separate from the beginner rental workflow.</p>
+    <h3>Objective</h3>
+    <p>In an early discussion with the company owner, he expressed his vision for expanding the professional instrument rental program. He aimed to establish a user-friendly system similar to the beginner rental program, explicitly targeting college-level and professional musicians.</p>
+    <p>My challenge was to design and implement a user-centric solution that addressed the current system's shortcomings while preserving the integrity of the beginner rental process.</p>
+    <h3>Solution</h3>
+    <h4>Challenges Identified</h4>
+    <ul>
+    <li>The beginner rental form was repurposed for professional rentals, leading to user confusion and detracting from the beginner rental experience.</li>
+    <li>Essential user inputs such as school district and school were irrelevant for professional rentals but still required by the current form.</li>
+    <li>The Professional Instrument Rental Program needed to appear as a standalone offering but also utilize the same form as the beginner rental program  </li>
+    </ul>
+    <h4>Proposed Solution</h4>
+    <p>I created a dedicated webpage for the professional rental program, prioritizing clarity, usability, and a visually appealing design.</p>
+    <h5>Landing Page Design</h5>
+    <ul>
+    <li>A visually striking banner featuring detailed imagery of professional instruments (flute, clarinet, and trumpet) and the tagline: "Experience the Difference."</li>
+    <li>A brief description of the professional rental program.</li>
+    <li>Prominent buttons to log in or create an account, essential for the application process.</li>
+    </ul>
+    <h5>Instrument Cards</h5>
+    <ul>
+    <li>Instruments were organized into categories, with each instrument displayed as a card.</li>
+    <li>Each card included:</li>
+    <ul>
+    <li>A high-resolution image (sourced from manufacturers).</li>
+    <li>A brief description and key specifications of the instrument.</li>
+    <li>A call-to-action button labeled with the rental price and linked directly to a pre-populated rental form.</li>
+    </ul>
+    </ul>
+    <h5>Streamlined Application Process</h5>
+    <ul>
+    <li>Clicking the CTA button directed users to a simplified rental form, pre-filled with the selected instrument, allowing users to complete the process with minimal steps.</li>
+    </ul>
+    <h3>Outcome</h3>
+    <p>The redesigned program had a handful of successes, with several users renting professional instruments. However, significant barriers emerged post-launch:</p>
+    <h4>Challenges Faced</h4>
+    <ul>
+    <li><strong>Internal Resistance:</strong> Staff, particularly the credit department led by the owner's wife, expressed reluctance and frustration in processing professional rentals. This cultural resistance undermined the program's internal adoption.</li>
+    <li><strong>Instrument Handling:</strong> Some instruments were returned in poor condition, leading to operational concerns about the viability of professional rentals.</li>
+    <li><strong>Perception of Quality:</strong> Using stock images instead of actual photos of the instruments may have impacted the program's credibility and trust among potential renters.</li>
+    </ul>
+    <h4>Lessons Learned</h4>
+    <ol>
+    <li><strong>Stakeholder Alignment:</strong> Internal communication and buy-in from key stakeholders are critical. Future initiatives should involve all affected departments to address concerns proactively.</li>
+    <li><strong>User Trust:</strong> Incorporating actual images of the rental instruments could enhance credibility and allow better documentation of the instrument's condition pre-rental.</li>
+    <li><strong>Clear Terms:</strong> Establishing robust agreements regarding the care and handling of professional instruments would help mitigate risks and set renter expectations.</li>
+    </ol>
+    <h3>Conclusion</h3>
+    <p>While the professional rental program demonstrated the potential to fill a niche in the market, its success was hampered by internal misalignment and operational challenges. This project underscored the importance of balancing user-centric design with organizational readiness and process optimization. The insights gained inform my approach to creating solutions considering user needs and organizational dynamics.</p>
+  </div>
+</div>
+
+<script>
+  // Select the header and content
+  const expandableHeader = document.querySelector('.expandable-header');
+  const expandableContent = document.querySelector('.expandable-content');
+
+  // Add click event to toggle content
+  expandableHeader.addEventListener('click', () => {
+    const isOpen = expandableContent.style.height !== '0px' && expandableContent.style.height !== '';
+
+    if (isOpen) {
+      // Collapse: Set height to 0
+      expandableContent.style.height = '0px';
+    } else {
+      // Expand: Set height to the scrollHeight of the content
+      expandableContent.style.height = `${expandableContent.scrollHeight}px`;
+    }
+  });
+</script>
+
+</body>
+</html>
 
