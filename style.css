@@ -24,12 +24,26 @@ h2 {
     .linkedin-link:hover {
 background-color:#FFFF00;
 }
-
+/*
 .border-thick {
     border-style: solid;
     border-color: black;
     border-width: .25rem;
 }
+*/
+
+.border-thick {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 75%;
+/*margin-top: 2em;
+margin-bottom: 2em;*/
+border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+}
+
 
 .border-thick-button {
     border-style: solid;
@@ -306,4 +320,3 @@ transform: rotate(45deg);
 transform: rotate(-135deg);
 -webkit-transform: rotate(-135deg);
 }
-
