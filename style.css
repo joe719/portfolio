@@ -332,6 +332,11 @@ text-decoration: underline;
 }
 */ 
 
+
+.expand-arrow {
+    margin-top: .5em;
+}
+
 .arrow {
 border: solid black;
 border-width: 0 3px 3px 0;
